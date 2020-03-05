@@ -18,3 +18,6 @@ maintenance = { status = "actively-developed" }
 [dependencies]
 racetrack-proc-macro = { path = "../racetrack-proc-macro", version = "0.0.1" }
 parking_lot = "0.10"
+
+[dev-dependencies]
+lazy_static = "1"

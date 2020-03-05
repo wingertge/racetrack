@@ -16,7 +16,3 @@ nightly = []
 proc-macro2 = "1"
 syn = { version = "1", features = ["full", "extra-traits"] }
 quote = "1"
-
-[dev-dependencies]
-lazy_static = "1"
-racetrack = { path = "../racetrack", version = "0.0.1" }
