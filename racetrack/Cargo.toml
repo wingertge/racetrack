@@ -1,0 +1,20 @@
+[package]
+name = "racetrack"
+version = "0.0.1"
+authors = ["Genna Wingert <wingertge@gmail.com>"]
+edition = "2018"
+
+readme = "README.md"
+repository = "https://github.com/wingertge/racetrack"
+keywords = ["tracking", "test", "async", "proc-macro"]
+categories = ["development-tools::testing", "development-tools"]
+license = "Apache-2.0"
+
+[badges]
+maintenance = { status = "actively-developed" }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+racetrack-proc-macro = { path = "../racetrack-proc-macro" }
+parking_lot = "0.10"

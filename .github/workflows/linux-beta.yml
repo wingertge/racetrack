@@ -1,0 +1,22 @@
+name: 'Linux (Beta)'
+
+on:
+  push:
+    branches-ignore: gh-pages
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install latest beta
+      uses: actions-rs/toolchain@v1
+      with:
+        toolchain: beta
+        override: true
+    - name: Build
+      run: cargo +beta build --verbose
+    - name: Run tests
+      run: cargo +beta test --verbose
